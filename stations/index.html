@@ -1,15 +1,23 @@
----
-layout: none
----
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Stations</title></head>
+<body>
+<h1>Stations</h1>
+<ul id="station-list"></ul>
 
-<h1>All Stations</h1>
+<script>
+(async () => {
+  const stations = await fetch("/stations.json").then(r => r.json());
 
-<ul>
-  {% for station in site.data.stations %}
-    <li>
-      <a href="/stations/{{ station.station_id }}/">
-        {{ station.station_name }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+  const list = document.getElementById("station-list");
+
+  stations.forEach(s => {
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="/stations/${s.station_id}/">${s.station_name}</a>`;
+    list.appendChild(li);
+  });
+})();
+</script>
+
+</body>
+</html>
