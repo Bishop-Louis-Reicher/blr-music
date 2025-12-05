@@ -1,3 +1,3 @@
 # Music
 
-# Here is radio stations hosted on a site, so we can embed them on the student portal
+# Here are radio stations on custom pages, so we can embed them on our own music portal
