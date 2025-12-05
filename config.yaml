@@ -1,5 +1,0 @@
-title: "Music Stations"
-collections:
-  stations:
-    output: true
-    permalink: /stations/:station_id/
