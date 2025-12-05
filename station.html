@@ -19,13 +19,17 @@ body {
     border: 1px solid #d6d6d6;
     border-radius: 6px;
     padding: 1px;
-    width: 100%;
+    width: 550px;      /* FIXED WIDTH */
+    height: 50px;      /* FIXED HEIGHT */
     box-sizing: border-box;
+    overflow: hidden;  /* Prevent content from spilling out */
 }
 
 .play-wrapper {
     width: 48px;
     height: 48px;
+    min-width: 48px;   /* Prevent squishing */
+    min-height: 48px;
     cursor: pointer;
 }
 
@@ -34,6 +38,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     color: #000;
+    line-height: 1; /* keeps text centered vertically */
 }
 </style>
 </head>
