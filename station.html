@@ -18,20 +18,19 @@ body {
     background: #ffffff;
     border: 1px solid #d6d6d6;
     border-radius: 6px;
-    padding: 1px;
-    width: 550px;      /* FIXED WIDTH */
-    height: 50px;      /* FIXED HEIGHT */
+    padding: 0;            /* REMOVE PADDING */
+    margin: 0;
     box-sizing: border-box;
-    overflow: hidden;  /* Prevent content from spilling out */
 }
 
 .play-wrapper {
     width: 48px;
-    height: 48px;
-    min-width: 48px;   /* Prevent squishing */
-    min-height: 48px;
-    cursor: pointer;
+    height: 46px;          /* REDUCED to fit inside 50px frame */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .station-title {
     margin-left: 12px;
