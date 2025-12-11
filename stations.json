@@ -8,5 +8,10 @@
     "station_id": "fkwn",
     "station_name": "White Noise",
     "station_stream_url": "https://stream.rcs.revma.com/5skkr2gtuy8uv"
+  },
+  {
+    "station_id": "ihhr",
+    "station_name": "Instrumental Hop Radio",
+    "station_stream_url": "https://cheetah.streemlion.com:2670/stream"
   }
 ]
