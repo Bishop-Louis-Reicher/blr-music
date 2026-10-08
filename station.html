@@ -84,8 +84,7 @@ body {
 </div>
 
 <!-- Hidden Audio Element -->
-<audio id="audio"></audio>
-
+<audio id="audio" crossorigin="anonymous"></audio>
 <script>
 // ===============================
 // LOAD STATION FROM URL (?id=xxx)
@@ -108,7 +107,9 @@ body {
     document.getElementById("stationName").innerText = station.station_name;
 
     // Assign stream
-    document.getElementById("audio").src = station.station_stream_url;
+    const audio = document.getElementById("audio");
+    audio.crossOrigin = "anonymous";
+    audio.src = station.station_stream_url;
 })();
 </script>
 
