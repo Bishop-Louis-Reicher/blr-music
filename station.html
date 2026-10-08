@@ -131,8 +131,8 @@ btn.onclick = () => {
         audio.play();
         state = "playing";
 
-        playIcon.style.display = "block";
-        stopIcon.style.display = "none";
+        playIcon.style.display = "none";
+        stopIcon.style.display = "block";
         return;
     }
 
@@ -142,7 +142,7 @@ btn.onclick = () => {
         state = "stopped";
 
         playIcon.style.display = "block";
-        stopIcon.style.display = "block";
+        stopIcon.style.display = "none";
         return;
     }
 };
