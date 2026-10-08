@@ -17,6 +17,6 @@
   {
     "station_id": "fcr",
     "station_name": "Fully Catholic Radio",
-    "station_stream_url": "http://198.50.238.178:5344/stream?type=http"
+    "station_stream_url": "http://198.50.238.178:5344/stream"
   }
 ]
